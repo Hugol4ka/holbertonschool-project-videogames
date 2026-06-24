@@ -1,5 +1,32 @@
+/* ===== RESET : on remet les compteurs à zéro ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== VARIABLES : la charte graphique du site ===== */
+:root {
+  /* Couleurs */
+  --color-bg: #0d0221;          /* fond sombre, presque noir-violet */
+  --color-pink: #ff2e97;        /* rose néon */
+  --color-cyan: #00f0ff;        /* cyan néon */
+  --color-text: #ffffff;        /* texte blanc */
+
+  /* Espacements */
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: Arial, sans-serif;
+}
+
 .hero-content {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: var(--color-text);
     padding: 50px 20px;
 }
