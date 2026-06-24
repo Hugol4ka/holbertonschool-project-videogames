@@ -9,10 +9,11 @@
 :root {
   /* Couleurs */
   --color-bg: #0d0221;          /* fond sombre, presque noir-violet */
-  --color-bg2: #2f1040;         /* fond sombre, violet foncé */
+  --color-bg2: #240a33;         /* fond sombre, violet foncé */
   --color-pink: #ff2e97;        /* rose néon */
   --color-cyan: #00f0ff;        /* cyan néon */
   --color-text: #ffffff;        /* texte blanc */
+  --gradient-gta6: linear-gradient(0deg, #ff2e97 0%, #ff8a00 100%); /* dégradé Vice City */
 
   /* Espacements */
   --space-sm: 1rem;
@@ -24,6 +25,30 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: Arial, sans-serif;
+}
+
+/* ===== SECTION HERO : Text ===== */
+
+#hero h1 {
+    font-size: 5rem; /* Un gros titre bien percutant */
+    font-weight: 900; /* Ultra gras pour que le dégradé se voit bien */
+    text-transform: uppercase; /* En majuscules, comme le logo */
+    font-family: 'Arial Black', sans-serif; /* Une police bien épaisse */
+    background: var(--gradient-gta6);
+    letter-spacing: 2px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5)); /* Ombrages */
+    
+    /* 2. La magie pour appliquer le dégradé au texte */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: var(--color-cyan);
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
 /* ===== SECTION HERO : le compte à rebours ===== */
@@ -55,7 +80,7 @@ body {
     font-size: 1rem;
     font-weight: bold;
     color: var(--color-cyan);
-
+}
 
 /* ===== SECTION PERSONNAGES ===== */
 #personnages {
