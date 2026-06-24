@@ -9,7 +9,7 @@
 :root {
   /* Couleurs */
   --color-bg: #0d0221;          /* fond sombre, presque noir-violet */
-  --color-bg2: #240a33;         /* fond sombre, violet foncé */
+  --color-bg2: #16071f;         /* fond sombre, violet foncé */
   --color-pink: #ff2e97;        /* rose néon */
   --color-cyan: #00f0ff;        /* cyan néon */
   --color-text: #ffffff;        /* texte blanc */
@@ -37,15 +37,17 @@ body {
     background: var(--gradient-gta6);
     letter-spacing: 2px;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5)); /* Ombrages */
+    margin-bottom: 20px;
     
-    /* 2. La magie pour appliquer le dégradé au texte */
+    /* appliquer le dégradé au texte */
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 #hero p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-family: 'Maker Felt', fantasy;;
     margin-top: 15px;
     color: var(--color-cyan);
     text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
@@ -80,6 +82,53 @@ body {
     font-size: 1rem;
     font-weight: bold;
     color: var(--color-cyan);
+}
+
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: var(--color-bg2);
+  padding: 20px;
+  border: 2px solid var(--color-pink);
+  border-radius: 15px;
+  text-align: center;
+  gap: 10px;
+}
+
+/* ===== SECTION TRAILER ===== */
+
+.presentation-globale {
+  max-width: 1200px;
+  margin: var(--space-md) auto 50px 0;
+  padding: 0 var(--space-md);
+}
+
+
+.presentation-globale h2 {
+  color: var(--color-pink);
+  margin-bottom: 20px;
+}
+
+#presentation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+  
+  padding: 0 var(--space-md) var(--space-lg) var(--space-md);
+  text-align: left;
+  color: var(--color-text);
+  font-size: 1.2rem;
+}
+
+.trailerVideo iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* ===== SECTION PERSONNAGES ===== */
