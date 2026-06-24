@@ -31,3 +31,42 @@ body {
     color: var(--color-text);
     padding: 50px 20px;
 }
+
+/* ===== SECTION PERSONNAGES ===== */
+#personnages {
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+}
+
+#personnages h2 {
+  color: var(--color-pink);
+  font-size: 2.5rem;
+  margin-bottom: var(--space-lg);
+}
+
+.cards {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid var(--color-cyan);
+  border-radius: 12px;
+  padding: var(--space-md);
+  max-width: 300px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: var(--space-sm);
+}
+
+.card h3 {
+  color: var(--color-cyan);
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+}
