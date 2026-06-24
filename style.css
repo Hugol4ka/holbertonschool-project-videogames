@@ -139,7 +139,7 @@ body {
 
 #personnages h2 {
   color: var(--color-cyan);
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: var(--space-lg);
 }
 
@@ -195,8 +195,8 @@ body {
 }
 
 .decor-overlay h2 {
-  color: var(--color-pink);
-  font-size: 2.5rem;
+  color: var(--color-cyan);
+  font-size: 3rem;
   margin-bottom: var(--space-md);
 }
 
