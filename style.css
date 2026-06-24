@@ -120,3 +120,38 @@ body {
   font-size: 1.5rem;
   margin-bottom: var(--space-sm);
 }
+
+/* ===== SECTION DECOR ===== */
+#decor {
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  background-image: url("assets/images/vicecity.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 70vh;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.decor-overlay {
+  background-color: rgba(13, 2, 33, 0.7);
+  padding: var(--space-lg);
+  border-radius: 12px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.decor-overlay h2 {
+  color: var(--color-pink);
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+}
+
+.decor-overlay p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
