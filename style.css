@@ -24,9 +24,3 @@ body {
   color: var(--color-text);
   font-family: Arial, sans-serif;
 }
-
-.hero-content {
-    text-align: center;
-    color: var(--color-text);
-    padding: 50px 20px;
-}
