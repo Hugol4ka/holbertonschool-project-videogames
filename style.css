@@ -9,6 +9,7 @@
 :root {
   /* Couleurs */
   --color-bg: #0d0221;          /* fond sombre, presque noir-violet */
+  --color-bg2: #2f1040;         /* fond sombre, violet foncé */
   --color-pink: #ff2e97;        /* rose néon */
   --color-cyan: #00f0ff;        /* cyan néon */
   --color-text: #ffffff;        /* texte blanc */
@@ -28,6 +29,30 @@ body {
 /* ===== SECTION HERO : le compte à rebours ===== */
 .hero-content {
     text-align: center;
-    color: var(--color-text);
+    background: var(--color-bg1);
     padding: 50px 20px;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-bg);
+    border: 2px solid var(--color-pink);
+    padding: 15px;
+    border-radius: 15px;
+    min-width: 10ch;
+    box-shadow: 0 0 10px var(--color-pink);
+}
+
+.countdown-item span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-cyan);
 }
