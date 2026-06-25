@@ -290,3 +290,18 @@ body {
   margin: var(--space-lg) auto;
   max-width: 1200px;
 }
+
+.preorder-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: var(--color-cyan);
+  background-color: var(--color-pink);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  margin-top: var(--space-md);
+}
