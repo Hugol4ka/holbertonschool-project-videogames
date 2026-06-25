@@ -19,6 +19,9 @@
   --space-sm: 1rem;
   --space-md: 2rem;
   --space-lg: 4rem;
+
+  /* Polices Titres */
+  --font-title: 'American Typewriter', serif;
 }
 
 body {
@@ -30,14 +33,14 @@ body {
 /* ===== SECTION HERO : Text ===== */
 
 #hero h1 {
-    font-size: 5rem; /* Un gros titre bien percutant */
-    font-weight: 900; /* Ultra gras pour que le dégradé se voit bien */
-    text-transform: uppercase; /* En majuscules, comme le logo */
-    font-family: 'Arial Black', sans-serif; /* Une police bien épaisse */
+    font-size: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: var(--font-title);
     background: var(--gradient-gta6);
     letter-spacing: 2px;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5)); /* Ombrages */
-    margin-bottom: 20px;
+    margin-bottom: var(--space-md);
     
     /* appliquer le dégradé au texte */
     -webkit-background-clip: text;
@@ -47,7 +50,7 @@ body {
 
 #hero p {
     font-size: 1.8rem;
-    font-family: 'Maker Felt', fantasy;;
+    font-family: 'American Typewriter', serif;
     margin-top: 15px;
     color: var(--color-cyan);
     text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
@@ -72,7 +75,7 @@ body {
     flex-direction: column;
     background: var(--color-bg);
     border: 2px solid var(--color-pink);
-    padding: 15px;
+    padding: var(--space-sm);
     border-radius: 15px;
     min-width: 10ch;
     box-shadow: 0 0 10px var(--color-pink);
@@ -88,11 +91,12 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: var(--color-bg2);
   padding: 20px;
   border: 2px solid var(--color-pink);
+  background-color: var(--color-bg2);
   border-radius: 15px;
   text-align: center;
   gap: 10px;
@@ -101,33 +105,59 @@ body {
 /* ===== SECTION TRAILER ===== */
 
 .presentation-globale {
-  max-width: 1200px;
-  margin: var(--space-md) auto 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  
+  width: 100%;
+  margin: var(--space-lg) auto;
   padding: 0 var(--space-md);
 }
 
-
 .presentation-globale h2 {
   color: var(--color-pink);
-  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: var(--font-title);
+  margin-bottom: var(--space-sm);
+  
+  width: 100%;
+  max-width: 1200px; 
+  text-align: left;
 }
+
 
 #presentation {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  width: 100%;
   
-  padding: 0 var(--space-md) var(--space-lg) var(--space-md);
-  text-align: left;
+  width: 100%;
+  max-width: 1200px; 
+
+  border: 2px solid var(--color-pink);
+  border-radius: 12px;
+  padding: var(--space-sm);
+}
+
+/* ===== (Vidéo et Texte) ===== */
+.trailerVideo, 
+.presentation-text {
+  flex: 1;
+}
+
+.presentation-text p {
   color: var(--color-text);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
 }
 
 .trailerVideo iframe {
+  width: 100%;
   max-width: 100%;
   height: auto;
+  aspect-ratio: 16 / 9;
   border-radius: 8px;
 }
 
