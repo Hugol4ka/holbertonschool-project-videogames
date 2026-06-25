@@ -279,3 +279,14 @@ body {
 .galerie-grid img.wide {
   grid-column: span 2;
 }
+
+/* ===== SECTION PRÉCOMMANDE ===== */
+#precommande {
+  padding: var(--space-lg) var(--space-md);
+  text-align: center;
+  background-color: var(--color-bg2);
+  border: 2px solid var(--color-pink);
+  border-radius: 12px;
+  margin: var(--space-lg) auto;
+  max-width: 1200px;
+}
