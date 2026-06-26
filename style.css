@@ -209,8 +209,9 @@ main {
 }
 
 #personnages h2 {
-  color: var(--color-cyan);
+  color: var(--color-pink);
   font-size: 3rem;
+  font-family: var(--font-title);
   margin-bottom: var(--space-sm);
 }
 
@@ -252,7 +253,10 @@ main {
   background-position: center;
   min-height: 70vh;
   border-radius: 12px;
-
+  border: 2px solid var(--color-pink);
+  border-radius: 12px;
+  padding: var(--space-md);
+  background-color: var(--color-bg2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,9 +271,10 @@ main {
 }
 
 .decor-overlay h2 {
-  color: var(--color-cyan);
+  color: var(--color-pink);
   font-size: 3rem;
   margin-bottom: var(--space-sm);
+  font-family: var(--font-title);
 }
 
 .decor-overlay p {
@@ -284,9 +289,10 @@ main {
 }
 
 #galerie h2 {
-  color: var(--color-cyan);
+  color: var(--color-pink);
   font-size: 3rem;
   margin-bottom: var(--space-sm);
+  font-family: var(--font-title);
 }
 
 .gallery-grid {
@@ -295,7 +301,7 @@ main {
   grid-auto-rows: 200px;
   gap: var(--space-sm);
 
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 
   border: 2px solid var(--color-pink);
