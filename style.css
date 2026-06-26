@@ -55,6 +55,7 @@ main {
 }
 
 .menu-navigation a {
+  text-shadow: 0px 0px 8px var(--color-cyan);
   font-family: 'American Typewriter', serif;
   border: 2px solid var(--color-pink);
   padding: var(--space-sm) var(--space-md);
@@ -78,7 +79,7 @@ main {
     font-family: var(--font-title);
     background: var(--gradient-gta6);
     letter-spacing: 2px;
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5)); /* Ombrages */
+    filter: drop-shadow(0px 4px 8px var(--color-pink));
     margin-bottom: var(--space-md);
     
     /* appliquer le dégradé au texte */
@@ -88,11 +89,12 @@ main {
 }
 
 #hero p {
-    font-size: 1.8rem;
-    font-family: 'American Typewriter', serif;
+    font-size: 2rem;
+    font-family: var(--font-title);
     margin-top: 15px;
     color: var(--color-cyan);
-    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+    text-shadow: 0px 5px 8px var(--color-cyan);
+    margin-bottom: var(--space-sm);
 }
 
 /* ===== SECTION COMPTE A REBOURS header ===== */
@@ -132,7 +134,7 @@ main {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: var(--space-md);
   border: 2px solid var(--color-pink);
   background-color: color-mix(in srgb, var(--color-bg) 80%, transparent);
   border-radius: 15px;
@@ -154,8 +156,9 @@ main {
 }
 
 .presentation-globale h2 {
-  color: var(--color-pink);
-  font-size: 2rem;
+  color: var(--color-cyan);
+  text-shadow: 0px 5px 8px var(--color-cyan);
+  font-size: 2.5rem;
   font-family: var(--font-title);
   margin-bottom: var(--space-sm);
   
@@ -209,8 +212,9 @@ main {
 }
 
 #personnages h2 {
-  color: var(--color-pink);
-  font-size: 3rem;
+  color: var(--color-cyan);
+  text-shadow: 0px 5px 8px var(--color-cyan);
+  font-size: 2.5rem;
   font-family: var(--font-title);
   margin-bottom: var(--space-sm);
 }
@@ -254,6 +258,7 @@ main {
   min-height: 70vh;
   border-radius: 12px;
   border: 2px solid var(--color-pink);
+  box-shadow: 0 0 20px var(--color-pink);
   border-radius: 12px;
   padding: var(--space-md);
   background-color: var(--color-bg2);
@@ -264,15 +269,16 @@ main {
 
 .decor-overlay {
   background-color: rgba(13, 2, 33, 0.7);
-  padding: var(--space-lg);
+  padding: var(--space-md);
   border-radius: 12px;
   max-width: 600px;
   text-align: center;
 }
 
 .decor-overlay h2 {
-  color: var(--color-pink);
-  font-size: 3rem;
+  color: var(--color-cyan);
+  text-shadow: 0px 5px 8px var(--color-cyan);
+  font-size: 2.5rem;
   margin-bottom: var(--space-sm);
   font-family: var(--font-title);
 }
@@ -284,13 +290,16 @@ main {
 
 /* ===== SECTION GALERIE ===== */
 #galerie {
-  padding: var(--space-lg) var(--space-md);
-  text-align: center;
+  padding: var(--space-md) var(--space-md);
+  text-align: left;
 }
 
 #galerie h2 {
-  color: var(--color-pink);
-  font-size: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--color-cyan);
+  text-shadow: 0px 5px 8px var(--color-cyan);
+  font-size: 2.5rem;
   margin-bottom: var(--space-sm);
   font-family: var(--font-title);
 }
@@ -346,6 +355,14 @@ main {
   max-width: 1200px;
 }
 
+#precommande h2 {
+  color: var(--color-cyan);
+  text-shadow: 0px 5px 8px var(--color-cyan);
+  font-family: var(--font-title);
+  font-size: 2rem;
+  margin-bottom: var(--space-sm);
+}
+
 .preorder-button {
   display: inline-block;
   padding: 15px 30px;
@@ -354,12 +371,14 @@ main {
   text-transform: uppercase;
   color: var(--color-cyan);
   background-color: var(--color-pink);
-  border: none;
+  border: 2px solid var(--color-pink);
   border-radius: 8px;
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+  background-color: color-mix(in srgb, var(--color-bg) 80%, transparent);
+  box-shadow: 0 0 20px var(--color-pink);
+  text-shadow: 0px 0px 8px var(--color-cyan);
 
   margin-top: var(--space-md);
 }
